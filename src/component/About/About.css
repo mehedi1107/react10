@@ -1,0 +1,23 @@
+#about {
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 27vw;
+}
+
+#text2 {
+    margin-left: 100px;
+    text-align: center;
+    font-size: 4, 5rem;
+}
+
+#lorem {
+    margin-left: 100px;
+}

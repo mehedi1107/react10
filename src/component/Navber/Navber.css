@@ -1,0 +1,31 @@
+#navber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+#name {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: default;
+  font-family: cursive;
+}
+
+#link {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 1rem;
+  transition: .3s;
+}
+
+#link:focus,
+#link:hover {
+  color: #0ef;
+}

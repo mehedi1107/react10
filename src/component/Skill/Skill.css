@@ -1,0 +1,276 @@
+#pro-language1{
+    color: #c95d2e;
+}
+#pro-language2{
+    color: #147bbc;
+
+}
+
+#pro-language3{
+    color: #b0bc1e;
+}
+
+#pro-language4{
+    color: #c32ec9;
+    
+}
+
+#pro-language5{
+    color: #69bcbc;
+    
+}
+#skill2{
+    display: flex;
+    margin-top: -55px;
+}
+#skill h2{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+#skill-h2{
+    font-size: 40px;
+}
+
+
+
+#container1{
+    width: 450px;
+    height: 470px;
+    padding: 36px 90px;
+    margin-left: 120px;
+    margin-top: 0;
+
+}
+#container1 h2{
+   text-align: center;
+   text-decoration: underline;
+   text-underline-offset: 10px;
+   text-decoration-thickness: 5px;
+   margin-bottom: 50px;
+}
+#bar{
+    font-size: 20px;
+    margin-top: 2px;
+
+}
+#bar:first-child{
+    margin-top: 0;
+}
+#w3s{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.we{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.we span{
+    height: 100%;
+    background-color: #0cf;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate .8s .8s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.we span::after{
+  position:absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -28px;
+  right: -28px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.we span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width:0px ;
+  border-top-color:#000 ;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+
+
+#line-html{
+    width: 90%;
+}
+#line-html::after{
+    content:'90%';
+}
+
+#line-css{
+    width: 65%;
+}
+
+#line-css::after{
+    content: '65%';
+}
+
+#line-java{
+    width: 70%;
+}
+#line-java::after{
+    content: '70%';
+}
+
+#line-react{
+    width: 75%;
+}
+#line-react::after{
+    content:'75%';
+}
+
+#line-node{
+    width: 55%;
+}
+#line-node::after{
+    content: '55%';
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+#circle1{
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset:502 ;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-ber{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+
+#radio5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+   
+}
+#radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 99px;
+    height: 160px;
+}
+
+#circle1{
+    stroke-width: 10;
+    stop-color: #000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+#path-1,
+#path-2,#path-3,#path-4
+{
+   stroke-width: 10;
+   stroke: #0cf;
+   fill: transparent;
+   stroke-dasharray: 502;
+   stroke-dashoffset: 502;
+   stroke-linecap: round;
+}
+#path-1{animation:animate-path1 1s 1s linear forwards;}
+#path-2{animation:animate-path2 1s 1s linear forwards;}
+#path-3{animation:animate-path3 1s 1s linear forwards;}
+#path-4{animation:animate-path4 1s 1s linear forwards;}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+}
+
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;;
+    }
+}
+
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;;
+    }
+}
+
+#percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+#text3{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
