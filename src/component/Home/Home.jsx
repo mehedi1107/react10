@@ -32,7 +32,7 @@ const Home = () => {
                </span>
             </div>
             <div id='img'>
-               < img src="src/component/image/profile.jpeg" alt=''></img>
+               < img src={ import.meta.env.BASE_URL +"src/component/image/profile.jpeg"} alt=''></img>
             </div>
 
 
